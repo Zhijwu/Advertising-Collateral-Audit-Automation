@@ -1,0 +1,84 @@
+.spacing {
+    margin-right: 120px; /* 增加下方的外边距，根据需要调整值 */
+  }
+  
+  table {
+      border-collapse: collapse;
+      width:90%;
+  }
+  
+  th {
+    height: 70px; 
+    border: 1px solid black;
+    background-color: #dde3e1;
+    color:black;
+  }
+  
+  td{
+    height: 50px;
+    border: 1px solid black;
+    color: black;
+    padding: 15px;
+  }
+  
+  tr:first-child td {
+    border-top: none;
+    border-bottom: none;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  tr:first-child td:first-child {
+    border-right: none;
+    border-left: none;
+    color:blue;
+  }
+  
+  tr:first-child td:last-child {
+    border-right: none;
+    border-left: none;
+    color:blue;
+  }
+  
+  body {
+      overflow-y: scroll; /* 只顯示垂直卷軸，不允許水平滾動 */
+  }
+  
+  /* 如果您希望固定網頁寬度，您可以使用以下樣式 */
+  .container {
+      max-width: 1200px; /* 根據需要調整最大寬度 */
+      margin: 0 auto; /* 將內容居中 */
+  }
+  
+  /* 列印按鈕樣式 */
+  #printButton {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    padding: 10px 20px;
+    background-color: #739175;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* 按鈕懸停時的樣式 */
+  #printButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  
+  .filled-checkbox {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
