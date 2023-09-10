@@ -8,13 +8,15 @@
 
 
 ### 首頁
-![image](https://github.com/Zhijwu/Advertising-Collateral-Audit-Automation/assets/113652924/102c7dec-6b25-4c70-8def-c268a4efe3dc)
+![1694331913474](https://github.com/Zhijwu/Advertising-Collateral-Audit-Automation/assets/113652924/3f273bdf-4b19-4f54-8ed7-3a5dae88dd6e)
 
-### 單題審核
+
+### 單題審核(編輯)
 ![1694327361318](https://github.com/Zhijwu/Advertising-Collateral-Audit-Automation/assets/113652924/00164715-8fb9-48be-82e5-2f8125577e77)
 
 ### 完整審核
-![image](https://github.com/Zhijwu/Advertising-Collateral-Audit-Automation/assets/113652924/99bae37f-923c-482c-a7ab-660453688231)
+![1694331976209](https://github.com/Zhijwu/Advertising-Collateral-Audit-Automation/assets/113652924/b21fcfcd-343d-4a3c-a7f5-a29871c90ce8)
+
 
 ### 檢視不合規狀況
 ![image](https://github.com/Zhijwu/Advertising-Collateral-Audit-Automation/assets/113652924/5e7a783e-9e2a-49b0-b0f4-43c25a5b449f)
