@@ -1,0 +1,76 @@
+body{
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #846d64;
+    text-align: center;
+}
+
+a{
+    border-radius: 10px;
+    color: #846d64;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #739175;
+    text-decoration: underline;
+}
+
+.highlighted {
+    background-image: linear-gradient(yellow, yellow);
+    background-repeat: no-repeat;
+    background-size: 100% 70%;  /* 設定背景的大小 */
+    background-position: center; /* 使背景居中 */
+    position: relative;
+    cursor: pointer;
+    display: inline-block;  
+}
+
+.highlighted:after {
+    content: "速查";
+    position: absolute;
+    width: 35px;
+    bottom: -25px;
+    left: 100%;
+    background-color: rgb(255, 246, 205);
+    border: 1px solid rgb(84, 84, 84);
+    padding: 2px 5px;
+    cursor: pointer;
+    display: none; /* 默认情况下不显示 */
+    z-index: 1000; 
+}
+
+.highlighted:hover:after {
+    display: block; /* 当鼠标悬停在 .highlighted 上时显示 */
+}
+
+.action-bar {
+    display: flex;
+    align-items: center;   /* 將內容垂直置中 */
+    justify-content: space-between; /* 確保左邊的檔名和右邊的按鈕之間有間距 */
+    padding: 10px 20px;    /* 增加一些內邊距使其看起來不那麼壓縮 */
+}
+
+#filename {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px; /* 提供按鈕之間的間距 */
+}
+
+.action-buttons a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none; /* 去除鏈接的下劃線 */
+    transition: background-color 0.3s; /* 提供過渡效果 */
+}
+
+.action-buttons a:hover {
+    text-decoration: underline; /* 當滑鼠懸停時改變背景色 */
+}

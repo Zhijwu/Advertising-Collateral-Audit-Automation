@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding-bottom: 80px; /* 設定為footer的高度，確保body內容不被footer遮擋 */
+}
+
+table {
+    border-collapse: collapse;  /* 這將使邊框合併為單一線條 */
+}
+table, th, td {
+    padding: 10px;
+    border: 1px solid rgb(192, 191, 191);
+    height: 40px;
+}
+
+.edit_link{
+    color: gray;
+}
+
+.delete_link{
+    color: red;
+}
+
+th{
+    background-color: #61776fbc;
+}
+
+.title_tr{
+    background-color: #dde3e1;
+}
+
+.title_text{
+    font-weight: bold;
+}
+
+.question_input{
+    outline: none;
+    width: 750px;
+    font-size: 16px;
+    border: none;
+    height: auto;
+}
+
+#footer {
+    position: fixed;
+    bottom: -130px; /* 初始狀態下將footer部分隱藏 */
+    width: 100%;
+    height: 140px; /* 根据实际内容调整 */
+    background-color: #dde3e1be;
+    padding: 10px 0;
+    border-top: 1px solid #dcdcdc;
+    z-index: 999;
+    transition: bottom 0.3s; /* 添加动画效果 */
+}
+
+#categoryModal {
+    display: none; 
+    position: fixed; 
+    outline: none;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px 40px; 
+    z-index: 1000; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 60%;
+    max-width: 650px;
+}
+
+#closeModal {
+    cursor: pointer; 
+    position: absolute; 
+    top: 15px; 
+    right: 15px;
+    font-size: 24px;
+}
+
+#categoryModal p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#categorySelect, #newQuestionInput {
+    width: 100%; 
+    padding: 10px; 
+    outline: none;
+    border: 1px solid #dde3e1;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#confirmCategory {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #61776fbc;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#confirmCategory:hover {
+    background-color: #bac7c2bc;
+}
+
+
+#modalBackdrop {
+    position: fixed; /* 使遮罩層固定在視窗上 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 全屏 */
+    height: 100%; /* 全屏 */
+    background-color: rgba(0,0,0,0.7); /* 使用rgba來實現半透明的黑色背景 */
+    z-index: 999; /* 確保遮罩層出現在大部分其他元素之上 */
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 95.7%;
+    background-color: white;
+    z-index: 1000;
+    background-color: #dde3e1;
+}
+
+.sticky td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+.sticky td:nth-child(2) {
+    width: 750px;
+}
+
+.sticky td:nth-child(3) {
+    width: 180px;
+}
+
+.sticky td:nth-child(4) {
+    width: 250px;
+}
+
+.sticky td:nth-child(5) {
+    width: 80px;
+}
+
+.title_tr td:first-child, .title_tr td:last-child {
+    border-left: none;
+    border-right: none;
+}
+
+.title_tr td {
+    border-color: transparent;  /* 將所有td的邊框設為透明 */
+}
+
+.title_tr {
+    border-left: none;
+    border-right: none;
+}
+
+.center-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.center-container input {
+    width: 500px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.center-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addCategoryBtn {
+    background-color: #9ebaa0;
+    color: #ffffff;
+}
+
+#addQuestionBtn {
+    background-color: #9ebaa0;
+    color: #ffffff;
+}
+
+.center-container button:hover {
+    opacity: 0.8;
+}
+
+#response-panel {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    border: 1px solid #ccc;
+    padding: 20px;
+    min-height: 100px;
+    width: 80%;
+    top: 10px; /* 从视口顶部开始的位置 */
+    left: 10%; /* 从左边缘开始的位置，保持面板居中 */
+    margin: 20px auto;
+    background-color: #ffffff; /* 背景色确保内容可见 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 为面板添加轻微的阴影 */
+    font-family: 'Arial', sans-serif;
+}
