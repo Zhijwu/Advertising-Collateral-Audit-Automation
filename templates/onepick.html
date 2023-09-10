@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/onepick.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div id="currentCategoryDisplay"></div>
+    <div style="text-align: center;">
+        <h1>Paralegal</h1>
+    </div>
+    <div>
+        <table style="margin: auto;">
+            <thead>
+                <tr style="color: #FFF; font-size: 20px;">
+                    <th style="width: 100px; text-align: center;">編輯</th>
+                    <th style="width: 750px;">題目</th>
+                    <th style="width: 180px;">系統審視</th>
+                    <th style="width: 180px;">檢視依據文檔</th>
+                    <th style="width: 80px;">測試</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ html_rows|safe }}
+            </tbody>
+        </table>
+    </div>
+    <div id="response-panel">
+        <!-- 機器人回應將在此顯示 -->
+        TEST RESPONSE
+    </div>
+
+    <!-- Footer section -->
+    <div id="footer">
+        <div class="center-container">
+            <input type="text" id="newCategoryName" placeholder="輸入新類別名稱">
+            <button id="addCategoryBtn">新增類別</button>
+            <button id="addQuestionBtn">新增題目</button>
+        </div>
+        <div id="categoryModal">
+            <span id="closeModal">&times;</span>
+            <p>請選擇要新增到的類別：</p>
+            <select id="categorySelect">
+                {% for category_num, category_name in categoriesInSelect %}
+                <option value="{{ loop.index0 }}">{{ category_num }}、{{ category_name }}</option>
+                {% endfor %}
+            </select>
+            <p>請輸入新增的題目：</p>
+            <input id="newQuestionInput">
+            <button id="confirmCategory">確認</button>
+        </div>
+        <div id="modalBackdrop" style="display:none;"></div>
+    </div>
+
+    
+    
+
+    <script type="text/javascript" src="{{ url_for('static', filename='onepick.js') }}"></script>
+</body>
+</html>

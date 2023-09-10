@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chartset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/checklist_table.css') }}">
+        <title> 法遵助手評鑑 </title>
+</head>
+<body>
+
+    <h1>廣宣裁決表 <img src="{{ url_for('static', filename='img/fubon_logo.jpg') }}" alt="Your Image" style="float: right;"></h1>
+    <p>單位: ___________部(處)/___________科  &nbsp; &nbsp; 專案名稱:</p>
+    <p>預計刊登時間: <span class="spacing"></span>刊登項目:</p>
+
+    <br/>
+
+    <table style="width: 100%;">
+        <colgroup>
+            <col style="width: 60%;">
+            <col style="width: 40%;">
+        </colgroup>
+
+        <tr>
+            <td >需求單位自評項目</td>
+            <td >自評結果</td>
+        </tr>
+        <tr>
+            <th >一、消費法規之遵循  </th>
+            <th > </th>
+        </tr>
+
+        <tr>
+            <td >1.廣告文宣製作設計時，是否詳細審酌參照消費者保護相關法令？</td>
+            <td class = "center_box">
+               <input type="checkbox" class = "checkbox">是
+               <input type="checkbox" class = "checkbox">不適用
+            </td>
+        </tr>
+
+        <tr>  
+            <td >2.訂定廣告文宣文字內容時，是否詳細審核其適法性？</td>
+            <td class="target-column">符合</td>
+        </tr>
+
+        <tr>
+            <th >二、行銷廣告</th>
+            <th > </th>
+        </tr>
+
+        <tr>  
+            <td >1.廣告文宣內容之真實性，是否確認無誇大虛偽宣傳或宣示致使大眾誤解？</td>
+            <td class="target-column">符合</td>
+        </tr>
+
+        <tr>
+            <td>2.針對廣告文宣之活動內容、客戶承作條件、限制條件、優惠條件及相關詳細內容是否確認已明確揭露？</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>3.廣告文宣之內容是否確認無誤導消費者不正確之價值及理財觀念？</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>4.廣告文宣之內容是否加註醒語文字，並將重要訊息同時提供於網站首頁以連結方式告知消費者?</td>
+            <td class = "center_box">
+                <input type="checkbox" class = "checkbox"> 是
+                <input type="checkbox" class = "checkbox"> 不適用  
+        </tr>
+        <tr>
+            <th >三、商品申請書、定型化契約之訂定</th>
+            <th > </th>
+        </tr>
+        <tr>
+            <td>1.各項定型化契約書是否已確實依金管會所訂之定型化契約範本及應記載、不得記載事項加以修改？</td>
+            <td class = "center_box">
+                <input type="checkbox" class = "checkbox"> 是
+                <input type="checkbox" class = "checkbox"> 不適用  
+            </td>
+        </tr>
+        <tr>
+            <td>2.各項申請書、定型化契約書中對於各項費用等訊息，是否完整揭露？</td>
+            <td class = "center_box">
+                <input type="checkbox" class = "checkbox">是
+                <input type="checkbox" class = "checkbox">不適用  
+            </td>
+        </tr>
+        <tr>
+            <th >四、消費爭議之處理</th>
+            <th > </th>
+        </tr>
+        <tr>
+            <td>1.是否已設置申訴管道或服務專線？</td>
+            <td class = "center_box">
+                <input type="checkbox" class = "checkbox">是
+                <input type="checkbox" class = "checkbox">不適用  
+            </td>
+        </tr>
+        <tr>
+            <td>2.消費爭議發生時，是否有明確單位負責處理或協調？</td>
+            <td class = "center_box">
+                <input type="checkbox" class = "checkbox">是
+                <input type="checkbox" class = "checkbox">不適用  
+            </td>
+        </tr>
+        <tr>
+            <th >五、著作人格權及智慧財產權合法取得</th>
+            <th > </th>
+        </tr>
+        <tr>
+            <td>1.廣宣資料內容所使用之圖片、人物、影像、音樂…等之著作人格權及著作智慧財產權是否合法取得及使用?。</td>
+            <td class = "center_box">
+                <input type="checkbox" class = "checkbox">是
+                <input type="checkbox" class = "checkbox">不適用  
+            </td>
+        </tr>
+        <tr>
+            <th >六、法令覆核</th>
+            <th > </th>
+        </tr>
+        <tr>
+            <td>1.廣宣資料確定內容無不當、不實陳述、誤導消費者或違反相關法令規章之情事。</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <th >七、信託業務行銷廣告（依照您勾選之廣告類型並依其項目進行檢核）</th>
+            <th > </th>
+        </tr>
+        <tr>
+            <td>1.廣告文宣之內容如涉及信託業務，是否符合 信託業從事廣告、業務招攬及營業促銷活動應遵循事項第六條第一項第十一款：從事高齡者或身心障礙者財產信託業務(以下簡稱安養信託)之宣導推廣活動時，提供贈品之單一成本價格上限為新臺幣五百元，安養信託以外之一般信託業務之宣導推廣活動，提供贈品之單一成本價格上限為新臺幣二百元，且均不得重複領取或累積金額以換取其他贈品。贈品活動不得變相誘導投資大眾或客戶申購特定金融商品。</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>2.廣告文宣之內容如涉及信託業務，是否未涉及特定投資標的？ （不得對一般大眾）</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>3.奈米投是否未提及「代操」、「智能理財」等語？</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>4.廣告文宣之內容如涉及信託業務，涉及投資理財分析等金融專業及相關事實陳述，是否具備合理分析基礎及根據？</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>5.廣告文宣之內容如涉及信託業務，是否「未引起一般投資大眾或客戶對信託業及其他同業或競爭者之商標或標章等混淆或誤認之虞」？</td>
+            <td class = "center_box">
+                <input type="checkbox" class = "checkbox">是
+                <input type="checkbox" class = "checkbox">不適用  
+            </td>
+        </tr>
+        <tr>
+            <td>6.廣告文宣之內容如涉及信託業務，是否「未貶低或詆毀其他同業或競爭者之業務或聲譽、貶低整體行業聲譽或以攻訐同業之方式作宣傳」？</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>7.廣告文宣之內容如涉及信託業務，是否「無虛偽、詐欺、隱匿或其他足致他人誤信之行為」？</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>8.廣告文宣之內容如涉及信託業務，是否符合「未將有定期配息性質之金融商品，與定期存款相互比擬，以避免誤導投資人對於金融商品實質風險之誤認」？</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>9.廣告文宣之內容如涉及信託業務，有關賦稅優惠之說明，是否載明所適用之對象及範圍？</td>
+            <td class="target-column">不適用</td>
+        </tr>
+        <tr>
+            <td>10.有關免稅之說明，是否載明免稅對象、免稅內容？</td>
+            <td class="target-column">不適用</td>
+        </tr>
+        <tr>
+            <td>11.如涉及比較信託業及其競爭者時，是否為客觀公平之比較，並揭露該比較之假設條件及比較因素，不得有誤導一般投資大眾或客戶之虞？</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>12.是否符合「不得採用不雅之文字或美術稿」？</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>13.是否符合「不得片斷截取報章雜誌之報導作為廣告、業務招攬及營業促銷活動時之資料內容。引用數據、資料及他人論述作為廣告、業務招攬及營業促銷活動之資料內容時，是否註明出處且未有故意隱匿不利之部分致有誤導投資大眾或客戶之虞」？</td>
+            <td class = "center_box">
+                <input type="checkbox" class = "checkbox">是
+                <input type="checkbox" class = "checkbox">不適用  
+            </td>
+        </tr>
+        <tr>
+            <td>14.廣告文宣之內容如涉及信託業務，是否刊登警語者，該警語字體大小，不得小於同一廣告上其他部分最小之字體，並應以粗體印刷顯著標示，以便客戶於快速閱覽相關廣告時，均可顯而易見？</td>
+            <td class = "center_box">
+                <input type="checkbox" class = "checkbox">是
+                <input type="checkbox" class = "checkbox">不適用  
+            </td>
+        </tr>
+        <tr>
+            <td>15.是否載明本行之名稱及聯絡方式？</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>16.廣告文宣之內容如涉及特定投資標的推介或具有暗示性勸誘者，是否符合信託業營運範圍受益權轉讓限制風險揭露及行銷訂約管理辦法第21條第1項第3款之規定「未寄送予年齡為七十歲以上、教育程度為國中畢業以下或有全民健康保險重大傷病證明之非專業投資人」？</td>
+            <td class = "center_box">
+                <input type="checkbox" class = "checkbox">是
+                <input type="checkbox" class = "checkbox">不適用 
+        </tr>
+        <tr>
+            <td>17.廣告文宣之內容如涉及信託業務，是否「未涉及對新台幣走勢之臆測」？</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>18.廣告文宣之內容如涉及信託業務，是否符合「未使用「優於定存」、「打敗通膨」等相類詞語」？</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>19.廣告使用「第一」、「冠軍」、「最多」、「最大」…等最高級用語連結客觀陳述，是否有銷售數字或意見調查等客觀數據佐證？</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>20.廣告文宣之內容如涉及信託業務，是否符合「不得採用使人誤信能保證本金之安全或獲利之文字」？</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>21.廣告文宣之內容如涉及信託業務，是否符合「對於獲利與風險應作平衡報導」</td>
+            <td class="target-column">符合</td>
+        </tr>
+        <tr>
+            <td>22.廣告內容含有推介衍生性金融商品，是否有排除寄送予最近一年內辦理衍生性金融商品交易筆數低於五筆之非專業投資人？</td>
+            <td class = "center_box">
+                <input type="checkbox" class = "checkbox">是
+                <input type="checkbox" class = "checkbox">不適用  
+            </td>
+        </tr>
+        <tr>
+            <td>23.文件內容是否已經部門主管、部門法遵主管審閱，確認內容無不當、不實陳述、誤導客戶或違反相關法令及自律規範（如後附）之情事？</td>
+            <td class = "center_box">
+                <input type="checkbox" class = "checkbox">是
+                <input type="checkbox" class = "checkbox">不適用  
+            </td>
+        </tr>
+        <tr>
+            <td>24.針對已簽立不具運用決定權之金錢信託契約或有價證券信託契約之非專業投資客戶，是否於推介前已取得委託人之同意書？</td>
+            <td class = "center_box">
+                <input type="checkbox" class = "checkbox">是
+                <input type="checkbox" class = "checkbox">不適用  
+            </td>
+        </tr>
+        <tr>
+            <td>25.請確認文案內容與佐證資料是否不符？</td>
+            <td class="target-column">符合</td>
+        </tr>
+    </table>
+    <!--<button id="printButton">列印</button>--->
+    
+
+    <script type="text/javascript" src="{{ url_for('static', filename='checklist_table.js') }}"></script>
+
+</body>
+</html>

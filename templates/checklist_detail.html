@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/checklist_detail.css') }}">
+    <title>Paralegal detail</title>
+</head>
+<body>
+    <header>
+        <h1>Paralegal</h1>
+    </header>
+    <div style="display: flex; justify-content: center; align-items: flex-start;">
+        <div id="div1" style="margin-right: 20px; margin-top: 15px; width: 600px; height:auto; background-color: white; border: 1px solid gray; padding: 10px; border-radius: 10px; flex-wrap: nowrap;">
+            <div>
+                <div class="action-bar" style="display: flex;">
+                    <div id="filename">檔名.txt</div>
+                    <div class="action-buttons">
+                        <a href="#" id="showall_btn">顯示全部</a>
+                        <a href="#" id="change_btn">生成報告</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="filecontent"></div>
+        </div>
+        <div id="container">
+        </div>
+
+        <!---問題1：有可能機器人output出來的自己會加上下引號(?)改變格式，要限制機器人output的格式或在程式中做處理？字要完全一模一樣，格式也一樣-->
+        <!---問題2：可能給的關鍵字會是[A，B]，但A跟B不是同一段文字，所以應該要切成[A],[B](也是格式問題)-->
+        <!---問題3：現在的關鍵字太長，匹配文本內欲標黃底的關鍵字完整度較低。-->
+        
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='checklist_detail.js') }}"></script>
+    
+</body>
+</html>

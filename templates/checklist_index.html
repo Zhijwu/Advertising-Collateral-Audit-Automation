@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://hayageek.github.io/jQuery-Upload-File/4.0.11/jquery.uploadfile.min.js"></script>   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">      
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/checklist_index.css') }}">
+        <title>Paralegal homepage</title>
+</head>
+<body>
+    <header>
+        <h1>Paralegal</h1>
+    </header>
+
+    <div class="buttons-container">
+
+        <div class="button-section">
+            <h2>廣告文宣檔案</h2>
+            <div class="file-uploader">
+                <input type="file" id="textfileuploader" name="file" accept="text,.txt" class="file-input">
+                <button onclick="uploadtxtFile()" class="upload-btn">上傳</button>
+            </div>
+            <ul id="txtfilelist" class="file-list"></ul>
+            <div class="file-content">
+                <p id="imtxtfilecontent" class="file-content-text"></p>
+            </div>
+        </div>
+
+        <div class="button-section">
+            <h2>佐證資料</h2>
+            <div class="file-uploader">
+                <input type="file" id="informfileuploader" name="file" accept="text,.txt" class="file-input">
+                <button onclick="uploadinformFile()" class="upload-btn">上傳</button>
+            </div>
+            <ul id="informfilelist" class="file-list"></ul>
+            <div class="file-content">
+                <p id="iminformfilecontent" class="file-content-text"></p>
+            </div>
+        </div>
+
+        <div>
+            <div class="div-funcbtns">
+                <button type="button" id="btnFunc1" onclick="changeColor(this)">信託業務</button>
+                <button type="button" id="btnFunc2" onclick="changeColor(this)">授信業務</button>
+                <button type="button" id="btnFunc3" onclick="changeColor(this)">信用卡業務</button>
+            </div>
+            <div class="div-checkbtns">
+                <button type="button" id="editbtn" class="buttons">編輯法條</button>
+                <button type="button" id="checkbtn" onclick="upload_File()" class="buttons">進行檢核</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="preloader">
+            <div class="circ4">
+                <i class="fas fa-book">
+                </i>
+            </div>
+            <div class="circ1">您</div>
+            <div class="circ2">的</div>
+            <div class="circ3">內</div>
+            <div class="circ4">容</div>
+            <div class="circ5">專</div>
+            <div class="circ6">業</div>
+            <div class="circ7">又</div>
+            <div class="circ8">富</div>
+            <div class="circ9">創</div>
+            <div class="circ10">意</div>
+            <div class="circ11">，</div>
+            <div class="circ12">派</div>
+            <div class="circ13">勒</div>
+            <div class="circ14">認</div>
+            <div class="circ15">真</div>
+            <div class="circ16">思</div>
+            <div class="circ17">考</div>
+            <div class="circ18">中</div>
+      </div>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='checklist_index.js') }}"></script>
+</body>
+</html>
