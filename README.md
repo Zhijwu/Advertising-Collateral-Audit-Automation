@@ -1,11 +1,12 @@
 # Advertising-Collateral-Audit-Automation
 ## 主題: 
-透過建構法規資料庫，讓 AI 協助審核行銷文案內容， 預期系統能夠提供初步預審的功能，大幅省去文案送審時間
+**透過建構法規資料庫，讓 AI 協助審核行銷文案內容， 預期系統能夠提供初步預審的功能，大幅省去文案送審時間**
 
 
 ## 工作: 
-後端系統、資料庫、Prompt
+**後端系統、資料庫、Prompt**
 
+## 網站頁面
 
 ### 首頁
 ![1694331913474](https://github.com/Zhijwu/Advertising-Collateral-Audit-Automation/assets/113652924/3f273bdf-4b19-4f54-8ed7-3a5dae88dd6e)
