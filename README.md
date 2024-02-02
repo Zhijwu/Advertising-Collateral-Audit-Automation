@@ -27,4 +27,5 @@
 ![image](https://github.com/Zhijwu/Advertising-Collateral-Audit-Automation/assets/113652924/30fc4dbf-6c44-401a-bbe1-fd3cbe71bd07)
 
 ### 審核報告
-![1694329403161](https://github.com/Zhijwu/Advertising-Collateral-Audit-Automation/assets/113652924/dc3334ae-af7b-4bde-962d-d469766f3996)
+![image](https://github.com/Zhijwu/Advertising-Collateral-Audit-Automation/assets/113652924/e6b50903-1953-466e-9331-5546171cc322)
+
